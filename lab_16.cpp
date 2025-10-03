@@ -33,6 +33,13 @@ class Color {
 
   // Public methods provide access to private member variables
  public:
+  Color() {
+    red = 0;
+    green = 0;
+    blue = 0;
+    name = "_";
+  }
+
   string getName() { return name; }
   void setName(string n) { name = n; }
   int getRed() { return red; }
