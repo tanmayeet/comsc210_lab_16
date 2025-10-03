@@ -40,6 +40,20 @@ class Color {
     name = "_";
   }
 
+  Color(string n, int r, int g, int b) {
+    name = n;
+    red = r;
+    green = g;
+    blue = b;
+  }
+
+  Color(string n, int r) {
+    name = n;
+    red = r;
+    green = 0;
+    blue = 0;
+  }
+
   string getName() { return name; }
   void setName(string n) { name = n; }
   int getRed() { return red; }
@@ -56,21 +70,21 @@ class Color {
 };
 
 int main() {
-  Color burgundy;
+  // Using default constructor
+  Color defaultColor;
+  defaultColor.print();
+
   // Create and initialize the Color burgundy
-  burgundy.setName("Burgundy");
-  burgundy.setRed(128);
-  burgundy.setGreen(0);
-  burgundy.setBlue(32);
+  Color burgundy("Burgundy", 128, 0, 32);
   burgundy.print();  // Displays Color burgundy
 
   // Create and initialize the Color viridian
-  Color viridian;
-  viridian.setName("Viridian");
-  viridian.setRed(64);
-  viridian.setGreen(130);
-  viridian.setBlue(109);
+  Color viridian("Viridian", 64, 130, 109);
   viridian.print();  // Displays Color viridian
+
+  // Create and initialize color using partial constructor
+  Color red_Only("Red Only", 255);
+  red_Only.print();
 
   return 0;
 }
