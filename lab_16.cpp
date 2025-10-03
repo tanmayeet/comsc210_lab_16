@@ -6,21 +6,21 @@ using namespace std;
 
 /*UML for Color class:
 private:
--red: int
--green: int
--blue: int
--name: string
+  -red: int
+  -green: int
+  -blue: int
+  -name: string
 
 public:
-+getName(): string
-+setName(string): void
-+getRed(): int
-+setRed(int): void
-+getGreen(): int
-+setGreen(int): void
-+getBlue(): int
-+setBlue(int): void
-+print(): void
+  +getName(): string
+  +setName(string): void
+  +getRed(): int
+  +setRed(int): void
+  +getGreen(): int
+  +setGreen(int): void
+  +getBlue(): int
+  +setBlue(int): void
+  +print(): void
 */
 
 // Initialized a Color class that represents a color with RGB values and a name
@@ -37,7 +37,7 @@ class Color {
     red = 0;
     green = 0;
     blue = 0;
-    name = "_";
+    name = "Name";
   }
 
   Color(string n, int r, int g, int b) {
@@ -83,7 +83,7 @@ int main() {
   viridian.print();  // Displays Color viridian
 
   // Create and initialize color using partial constructor
-  Color red_Only("Red Only", 255);
+  Color red_Only("Red", 255);
   red_Only.print();
 
   return 0;
