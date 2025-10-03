@@ -39,7 +39,6 @@ class Color {
     blue = 0;
     name = "_";
   }
-  // rfn erjf
 
   string getName() { return name; }
   void setName(string n) { name = n; }
