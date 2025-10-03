@@ -1,4 +1,4 @@
-// COMSC210 | Lab 14 | Tanmayee Chalamalasetti
+// COMSC210 | Lab 16 | Tanmayee Chalamalasetti
 // IDE Used: VS Code
 
 #include <iostream>
@@ -54,6 +54,7 @@ class Color {
     blue = 0;
   }
 
+  // setters and getters for the four Color atttributes
   string getName() { return name; }
   void setName(string n) { name = n; }
   int getRed() { return red; }
@@ -75,6 +76,7 @@ int main() {
   defaultColor.print();
 
   // Create and initialize the Color burgundy
+  // Burgundy and Viridian use the full parameter constuctor
   Color burgundy("Burgundy", 128, 0, 32);
   burgundy.print();  // Displays Color burgundy
 
